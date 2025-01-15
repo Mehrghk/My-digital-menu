@@ -1,0 +1,227 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Playwrite+AU+SA:wght@100..400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital@0;1&family=Playwrite+AU+SA:wght@100..400&display=swap');
+@font-face {
+    font-family: blanquotey;
+    src: url(font/blanquotey/Blanquotey.ttf);
+}
+@font-face {
+    font-family: Picaflor;
+    src: url('font/picaflor/Picaflor-Regular.otf');
+}
+
+.index-body{
+    margin: 0;
+    background: #0a0a0a;
+    /* overflow: hidden; */
+}
+
+a{
+    color: #e4e4e4;
+    text-decoration: none;
+    font-family: Playfair;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* a:hover{
+    color: #fae5a7;
+} */
+/* **************************************** */
+.outer-div-nav{
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.navbar{
+    /* position: absolute; */
+    /* z-index: 1; */
+    
+    height: 55px;
+    width: 530px;
+    background: #ffffff;
+    border-radius: 50px;
+    margin: 40px 40px;
+    color: #081212;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+button{
+    border-radius: 50px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 7px 20px;
+    font-size: 18px;
+    overflow: hidden;
+}
+.button-text-1{
+    display: block;
+}
+.button-text-2{
+    display: none;
+}
+a{
+    color: #081212;
+    text-decoration: none;
+    font-family: "Archivo", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+a:hover ,svg:hover{
+    /* color: #315b5b; */
+    /* color: #F3C889; */
+    cursor: pointer;
+}
+.background{
+    display: flex;
+    height: 100vh; 
+    width: 100vw;
+    background-image: url('photos/a-photo-of-a-sleek-modern-cafe-restauran_MPtV5fzNSRyX4kmNZ7AxcQ_xVGIokFXRimnrkIrLPEykQ.jpeg');
+    background-size: cover;
+    filter: brightness(0.4);
+}
+
+.outer-div-texts{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Archivo", serif;
+}
+.p1{
+    font-size: 40px;
+    margin: 0;
+    color: #F3C889;
+    font-family: "Playwrite AU SA", serif;
+}
+.p2{
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+    font-family: blanquotey;
+}
+.logo-h5{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 10vh;
+    font-family: "Playwrite AU SA", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+.p3{
+    margin-top: 0;
+    width: 50vw;
+    font-size: 20px;
+    align-self: center;
+    letter-spacing: 2px;
+}
+.outer-div-nav-options{
+    position: absolute;
+    z-index: 3;
+    height: 80vh;
+    width: 94vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #000000;
+    font-family: "Archivo", serif;
+}
+
+.clock-hours-body{
+    position: absolute;
+    width: 25vw;
+    height: 27vh;
+    background: #ffffff;
+    border-radius: 14px;
+    margin: -20px 0;
+    opacity: 0;
+}
+
+.clock-hours-body.visible {
+    opacity: 1;
+    z-index: 10;
+}
+.clock-hours-body > h4{
+    text-align: center;
+    font-weight: normal;
+    font-size: 19px;
+    margin: 15px 0px;
+}
+.clock-hours-outer-span{
+    display: flex;
+    justify-content: space-around;
+}
+.clock-colomn:first-child{
+    font-size: 17px;
+    text-align: left;
+    font-weight: bold;
+}
+.clock-colomn:last-child{
+    font-size: 17px;
+    text-align: right;
+    color: rgb(49, 48, 48);
+}
+.list-body{
+    position: absolute;
+    width: 240px;
+    height: 330px;
+    background: #ffffff;
+    border-radius: 14px;
+    left: 70vh;
+    padding: 0px 16px;
+    font-family: "Archivo", serif;
+    opacity: 0;
+}
+.list-body.visible {
+    opacity: 1;
+    z-index: 10;
+}
+.list-span{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+    justify-content: space-around;
+}
+.list-text-span{
+    border-bottom: 2px solid #d2d1d1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+.last-one{
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+.list-body > h4{
+    text-align: center;
+    font-weight: normal;
+    font-size: 19px;
+    margin: 15px 0px;
+}
+.arrow1{
+    opacity: 0;
+    /* transform: translateX(29px); */
+}
+/* .arrow2{} */

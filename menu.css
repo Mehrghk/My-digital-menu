@@ -1,0 +1,144 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Playwrite+AU+SA:wght@100..400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital@0;1&family=Playwrite+AU+SA:wght@100..400&display=swap');
+@font-face {
+    font-family: blanquotey;
+    src: url(font/blanquotey/Blanquotey.ttf);
+}
+@font-face {
+    font-family: Picaflor;
+    src: url('font/picaflor/Picaflor-Regular.otf');
+}
+body{
+    display: flex;
+}
+.my-left-menu-side{
+    /* position: absolute; */
+    position: fixed;
+}
+.outer-div-nav{
+    position: absolute;
+    z-index: 2;
+    width: 50vw;
+    height: 95vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+button{
+    border-radius: 50px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 7px 20px;
+    font-size: 18px;
+    overflow: hidden;
+}
+.background{
+    display: flex;
+    height: 100vh; 
+    width: 50vw;
+    background-image: url('photos/restaurant5.jpeg');
+    background-size: cover;
+    position: fixed;
+    z-index: -2;
+}
+.background-behind-div{
+    height: 100vh; 
+    width: 50vw;
+}
+.outer-div-texts{
+    position: fixed;
+    height: 100vh;
+    width: 50vw;
+}
+.logo-h5{
+    width: 50vw;
+}
+.outer-div-nav-options{
+    height: 80vh;
+    width: 47vw;
+}
+
+.clock-hours-body{
+    width: 320px;
+    height: 190px;
+}
+
+.list-body{
+    width: 240px;
+    height: 330px;
+    left: 101.0800px;
+}
+.myMenu{
+    width: 50vw;
+    height: 100vh;
+    right: 0px;
+}
+.p11{
+    margin-top: 10px;
+    padding: 0 50px;
+    font-size: 30px;
+    font-family: "Dancing Script", serif;
+}
+.fixed-navigation{
+    width: 47vw;
+    height: 30px;
+    right: 0;
+    position: fixed;
+    background: #0A0A0A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    /* z-index: -2; */
+    padding: 10px;
+}
+.fixed-navigation a{
+    margin: 0 20px;
+    color: white;
+    font-family: "Playwrite AU SA", serif;
+}
+.Starter-menu-nav{
+    color: #F3C889;
+
+}
+.fixed-navigation a:hover{
+    color: #F3C889;
+    font-family: "Playwrite AU SA", serif;
+}
+
+.food-parts{
+    margin: 50px 0;
+}
+.food-list{
+    margin: 10px 0;
+}
+.foods-span{
+    width: 80%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    padding: 10px 30px;
+    border-radius: 14px;
+    font-family: "Picaflor";
+}
+.food-of-the-day{
+    border: 1px solid #F3C889;
+    
+}
+.off-price{
+    display: none;
+    text-decoration: line-through;
+    color: rgb(98, 94, 88);
+}
+.food-of-the-day > .foods-span > .food-price > .off-price{
+    display: block;
+}
+.food-image{
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+    /* background-size: fill; */
+}
