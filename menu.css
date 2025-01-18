@@ -12,10 +12,9 @@ body{
     display: flex;
 }
 .my-left-menu-side{
-    /* position: absolute; */
     position: fixed;
 }
-.outer-div-nav{
+/* .outer-div-nav{
     position: absolute;
     z-index: 2;
     width: 50vw;
@@ -23,7 +22,7 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-}
+} */
 button{
     border-radius: 50px;
     background: #000000;
@@ -55,7 +54,7 @@ button{
     width: 50vw;
 }
 .outer-div-nav-options{
-    height: 80vh;
+    height: 85vh;
     width: 47vw;
 }
 
@@ -89,8 +88,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
-    /* z-index: -2; */
     padding: 10px;
 }
 .fixed-navigation a{
@@ -124,9 +121,9 @@ button{
     border-radius: 14px;
     font-family: "Picaflor";
 }
-.food-of-the-day{
+.for-hover:hover{
     border: 1px solid #F3C889;
-    
+
 }
 .off-price{
     display: none;
@@ -141,4 +138,220 @@ button{
     height: 85px;
     border-radius: 10px;
     /* background-size: fill; */
+    
+}
+.food-image:hover{
+    transform: rotate(5deg);
+    transition: transform 1s;
+}
+.outer-div-nav{
+    position: absolute;
+    z-index: 1;
+    width: 50vw;
+    height: 95vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.navbar{
+    position: fixed;
+    bottom: 0px;
+    height: 55px;
+    width: 530px;
+    background: #ffffff;
+    border-radius: 50px;
+    margin: 40px 40px;
+    color: #081212;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+@media (max-width:1170px){
+    /* .outer-div-nav {
+        width: 100vw;
+        position: fixed;
+    } */
+    .outer-div-nav-options{
+        position: fixed;
+        height: 80vh;
+        width: 100vw;
+    }
+    .list-body {
+        width: 240px;
+        height: 330px;
+        left: 203px;
+    }
+    .clock-hours-body {
+        width: 320px;
+        height: 190px;
+        right: 450px;
+    }
+    .outer-div-nav{
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        height: 95vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+@media (max-width:990px){
+    body{
+        display: flex;
+        flex-direction: column;
+        overflow-x : hidden;
+    }
+    .my-left-menu-side{
+        /* position: absolute; */
+        position: relative;
+    }
+    .logo-h5{
+        width: 100vw;
+    }
+    .outer-div-nav-options{
+        position: fixed;
+        height: 85vh;
+        width: 100vw;
+    }
+    .outer-div-texts{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+    }
+    .background{
+        display: flex;
+        height: 100vh; 
+        width: 100vw;
+        background-image: url('photos/restaurant5.jpeg');
+        background-size: cover;
+        position: relative;
+        /* z-index: -2; */
+    }
+    .background-behind-div{
+        height: 100vh; 
+        width: 50vw;
+        display: none;
+    }
+    .myMenu{
+        width: 100vw;
+        height: 100vh;
+        right: 0px;
+    }
+    .fixed-navigation{
+        width: 100vw;
+        height: 30px;
+        right: 0;
+        position: sticky;
+        background: #0A0A0A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .list-body {
+        width: 240px;
+        height: 330px;
+        left: 43.08px;
+    }
+    .clock-hours-body {
+        width: 320px;
+        height: 190px;
+        left: 164px;
+    }
+}
+@media (max-width:760px){
+    nav a{
+        display: none;
+    }
+    .Starter-menu-nav,.Breakfast-menu-nav, .Lunch-menu-nav, .Drinks-menu-nav{
+        display: block;
+    }
+    .a-button-dar{
+        display: block;
+    }
+    .navbar {
+        width: 310px;
+    }
+    .background{
+        display: flex;
+        height: 60vh; 
+        width: 100vw;
+        background-size: cover;
+        position: relative;
+    }
+    .outer-div-texts{
+        position: absolute;
+        height: 60vh;
+        width: 100vw;
+    }
+    .p1{
+        font-size: 30px;
+    }
+    .p2{
+        font-size: 60px;
+    }
+    .fixed-navigation{
+        width: 100vw;
+        height: 30px;
+        right: 0;
+        position: sticky;
+        background: #0A0A0A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+@media (max-width:500px){
+    .fixed-navigation{
+        width: 90vw;
+        height: 30px;
+        /* right: 0; */
+        position: sticky;
+        background: #0A0A0A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .fixed-navigation a {
+        font-size: 12px;
+    }
+    .list-body {
+        width: 240px;
+        height: 330px;
+        left: 43.08px;
+    }
+    .clock-hours-body {
+        width: 320px;
+        height: 190px;
+        left: auto;
+        right: auto;
+    }
+    .navbar {
+        position: fixed;
+        bottom: 0px;
+        margin: 40px 17px;
+        align-self: center;
+        justify-self: center;
+    }
+    .foods-span {
+        width: 70%;
+    }
+    .outer-div-nav-options{
+        position: fixed;
+        height: 85vh;
+        width: 100vw;
+    }
+    .outer-div-nav {
+        position: absolute;
+        z-index: 1;
+        width: 97vw;
+        height: 95vh;
+    }
+    .food-title-discription p {
+        display: none;
+    }
 }

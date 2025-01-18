@@ -5,6 +5,7 @@ const clock = document.querySelector(".bi-clock");
 const clock_hours_body = document.querySelector('.clock-hours-body');
 const arrow1 = document.querySelectorAll('.arrow1');
 const arrow2 = document.querySelectorAll('.arrow2');
+const outer_div_nav_options = document.querySelector('.outer-div-nav-options');
 let timer;
 
 
@@ -34,6 +35,9 @@ clock.addEventListener('mouseover', function(){
     clock_hours_body.style.transition = '.3s';
     clearTimeout(timer);
     clock_hours_body.classList.add('visible');
+    // clock_hours_body.style.display = 'block';
+    // outer_div_nav_options.style.display = 'flex';
+
 });
 clock.addEventListener('mouseout', function(e){
     timer = setTimeout(() => {
@@ -41,8 +45,9 @@ clock.addEventListener('mouseout', function(e){
             clock_hours_body.classList.remove('visible');
             clock_hours_body.style.margin = '0px 0px';
             clock_hours_body.style.transition = '.3s';
+            // clock_hours_body.style.display = 'none';
         }
-    }, 50);
+    }, 100);
         
 });
 clock_hours_body.addEventListener('mouseover', function() {
@@ -54,8 +59,10 @@ clock_hours_body.addEventListener('mouseout', function() {
             clock_hours_body.style.margin = '0px 0px';
             clock_hours_body.style.transition = '.3s';
             clock_hours_body.classList.remove('visible');
+            // clock_hours_body.style.display = 'none';
+            // outer_div_nav_options.style.display = 'none';
         }
-    }, 50);
+    }, 100);
 });
 
 //for my pages list
@@ -64,6 +71,10 @@ list.addEventListener('mouseover', function(){
     list_body.style.transition = '.3s';
     clearTimeout(timer);
     list_body.classList.add('visible');
+    // list_body.style.display = 'block';
+    // outer_div_nav_options.style.display = 'flex';
+    outer_div_nav_options.style.z_index = '10';
+
 });
 list.addEventListener('mouseout', function(e){
     timer = setTimeout(() => {
@@ -71,8 +82,12 @@ list.addEventListener('mouseout', function(e){
             list_body.classList.remove('visible');
             list_body.style.margin = '0px 0px';
             list_body.style.transition = '.3s';
+            // list_body.style.display = 'none';
+            // outer_div_nav_options.style.display = 'none';
+            outer_div_nav_options.style.z_index = '-3';
+
         }
-    }, 50);   
+    }, 100);   
 });
 list_body.addEventListener('mouseover', function() {
     clearTimeout(timer);
@@ -84,8 +99,12 @@ list_body.addEventListener('mouseout', function() {
             list_body.style.margin = '0px 0px';
             list_body.style.transition = '.3s';
             list_body.classList.remove('visible');
+            // list_body.style.display = 'none';
+            // outer_div_nav_options.style.display = 'none';
+            outer_div_nav_options.style.z_index = '-3';
+
         }
-    }, 50);
+    }, 100);
 });
 
 document.addEventListener('wheel', (event) => {
