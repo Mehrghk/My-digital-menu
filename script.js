@@ -128,7 +128,7 @@ window.addEventListener('load', function () {
         } else {
             alert('در اینجا میتوانید عکس هایی از رستوران ما را ببینید!');
         }
-    } else if (fileName === "index.html") {
+    } else if (fileName === "") {
       alert('در حال حاظر تنها صفحات منو و رستوران آماده هستند!');
     } 
     // else if (fileName === "menu-page.html"){
